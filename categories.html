@@ -5,8 +5,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Categories</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      /*product trong categories*/
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        color: #111;
+      }
+
+      #Product {
+        max-width: 1200px;
+        margin: 0px auto;
+        padding: 120px 50px 50px 50px;
+      }
+
+      #Product .title {
+        margin-bottom: 20px;
+      }
+
+      /* Override lại màu link trong sản phẩm */
+      .product-box a,
+      .product-box a:visited {
+        color: #474747; /* màu chữ giống menu */
+        text-decoration: none;
+        font-weight: 500; /* cho chữ đậm hơn chút để giống header */
+      }
+
+      /* Khi hover vào tên sản phẩm */
+      .product-box a:hover {
+        color: #000000;
+      }
+      .product-box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .product-box-img {
+        width: 100%;
+      }
+
+      #Product .workdesk-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 sản phẩm trên 1 hàng */
+        gap: 20px;
+      }
+
+      .product-box {
+        border: 1px solid #eee;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        background: #fff;
+        transition: transform 0.2s ease;
+      }
+
+      .product-box:hover {
+        transform: scale(1.05);
+      }
+
+      .product-box-img img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+
+      .product-box-text {
+        font-size: 14px;
+      }
+
+      .product-text-title {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .product-box span {
+        color: red;
+        font-weight: bold;
+      }
+
+      .product-box del {
+        color: #999;
+        font-size: 12px;
+        margin-left: 5px;
+      }
+    </style>
   </head>
+
   <body>
+    <section id="Product">
+      <h2 class="title">Work Desk</h2>
+      <div class="workdesk-container">
+        <!-- Product 1 -->
+        <div class="product-box">
+          <a href="detail.html" class="product-box-img">
+            <img src="assets/images/c2.png" alt="Desk 1" />
+            <span>-50%</span>
+          </a>
+          <div class="product-box-text">
+            <a href="#" class="product-text-title">Monterra MT01</a>
+            <span>$40 <del>$80</del></span>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-box">
+          <a href="#" class="product-box-img">
+            <img src="assets/images/c2.png" alt="Desk 2" />
+            <span>-10%</span>
+          </a>
+          <div class="product-box-text">
+            <a href="#" class="product-text-title">Monterra MT02</a>
+            <span>$63 <del>$70</del></span>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-box">
+          <a href="#" class="product-box-img">
+            <img src="assets/images/c2.png" alt="Desk 3" />
+            <span>New</span>
+          </a>
+          <div class="product-box-text">
+            <a href="#" class="product-text-title">Monterra MT03</a>
+            <span>$55</span>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-box">
+          <a href="#" class="product-box-img">
+            <img src="assets/images/c2.png" alt="Desk 4" />
+          </a>
+          <div class="product-box-text">
+            <a href="#" class="product-text-title">Monterra MT04</a>
+            <span>$90 <del>$120</del></span>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-box">
+          <a href="#" class="product-box-img">
+            <img src="assets/images/c2.png" alt="Desk 5" />
+          </a>
+          <div class="product-box-text">
+            <a href="#" class="product-text-title">Monterra VK01</a>
+            <span>$150</span>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-box">
+          <a href="#" class="product-box-img">
+            <img src="assets/images/c2.png"" alt="Desk 5" />
+          </a>
+          <div class="product-box-text">
+            <a href="#" class="product-text-title">Monterra VK02</a>
+            <span>$80</span>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="scripts/Loadheaderfooter.js"></script>
   </body>

@@ -3,9 +3,263 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bàn làm việc</title>
+    <title>Product Page</title>
+    <link
+      rel="stylesheet"
+      href="./assets/icon/themify-icons/themify-icons.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        color: #111;
+      }
+      .container {
+        display: flex;
+        max-width: 1200px;
+        /* width: 90%; */
+        margin: 0 auto;
+        gap: 40px;
+        background-color: #fff;
+        padding: 120px 120px 80px 120px;
+        border-radius: 8px;
+      }
+      /* Left Column */
+      .left {
+        flex: 2;
+      }
+      .main-image {
+        border: 1px solid #eee;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        background: #fafafa;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      .main-image img {
+        max-width: 80%;
+      }
+
+      .main-image img:hover {
+        transform: scale(1.2);
+      }
+
+      .description {
+        margin-top: 15px;
+        font-size: 14px;
+        color: #444;
+        line-height: 1.6;
+        font-style: italic;
+        justify-content: center;
+      }
+
+      /* Right Column */
+      .right {
+        flex: 1.2;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .product-title {
+        font-size: 26px;
+        font-weight: bold;
+        margin: 0l;
+      }
+      .product-subtitle {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 15px;
+      }
+      .price {
+        font-size: 40px;
+        font-weight: bold;
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 3px;
+        text-align: left;
+        background-color: #54514d;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        width: auto;
+        max-width: fit-content;
+        color: #ccc;
+      }
+
+      .add-to-cart label {
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .add-to-cart input[type="number"] {
+        width: 70px;
+        padding: 8px;
+        font-size: 16px;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .add-to-cart {
+        display: flexbox;
+        margin: auto 0;
+        align-items: center;
+        gap: 15px;
+      }
+      .btn-cart {
+        margin-top: 20px;
+        background: black;
+        border: none;
+        padding: 15px 40px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 30px;
+        color: rgb(255, 255, 255);
+      }
+
+      .btn-cart:hover {
+        background: #ccc;
+      }
+
+      .btn-cart a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .benefits {
+        font-size: 13px;
+        margin: auto 0;
+        margin-bottom: 0px;
+        color: #333;
+        line-height: 1.5;
+      }
+      .stock-info {
+        margin-top: 0;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .stock-info p {
+        margin: 8px 0;
+      }
+      .stock-available {
+        color: green;
+        font-weight: bold;
+      }
+
+      /* Radio */
+      .product-options {
+        margin: 20px 0;
+      }
+
+      .radio-option {
+        display: inline-block;
+        margin-right: 12px;
+        cursor: pointer;
+      }
+
+      .radio-option input[type="radio"] {
+        display: none; /* ẩn nút radio mặc định */
+      }
+
+      .radio-option span {
+        display: inline-block;
+        padding: 8px 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        background: #f9f9f9;
+        transition: all 0.25s;
+      }
+
+      .radio-option input[type="radio"]:checked + span {
+        background: #ccc;
+        border-color: black;
+        font-weight: bold;
+        border-radius: 2px;
+      }
+    </style>
   </head>
   <body>
+    <div class="container">
+      <!-- Left Column -->
+      <div class="left">
+        <div class="main-image">
+          <img
+            src="/assets/product_img/thanh-lý-bàn-ghế-văn-phòng-1.jpg"
+            alt="Plate"
+          />
+        </div>
+        <div class="description">
+          The TripleDesk is designed to combine elegance and durability,
+          offering the same smooth and refined appearance as bone porcelain
+          while being crafted from premium-quality wood sourced responsibly from
+          African forests. Its modern design and sturdy structure make it a
+          perfect choice for professional workspaces that value both style and
+          long-lasting performance
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="right">
+        <div class="product-title">Office Desk</div>
+        <div class="product-subtitle">Triple, White, 3M Wood</div>
+        <div class="price">$80</div>
+
+        <div class="add-to-cart">
+          <div class="product-options">
+            <p><strong>SIZE</strong></p>
+
+            <label class="radio-option">
+              <input type="radio" name="size" value="S" checked />
+              <span>S</span>
+            </label>
+
+            <label class="radio-option">
+              <input type="radio" name="size" value="M" />
+              <span>M</span>
+            </label>
+
+            <label class="radio-option">
+              <input type="radio" name="size" value="L" />
+              <span>L</span>
+            </label>
+
+            <label class="radio-option">
+              <input type="radio" name="size" value="XL" />
+              <span>XL</span>
+            </label>
+          </div>
+          <div class="quantity-box">
+            <label for="quantity">Quantity</label>
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              min="1"
+              value="1"
+            />
+          </div>
+          <button class="btn-cart">
+            <i class="ti-shopping-cart"></i>
+            <a href="categories.html">Add to cart</a>
+          </button>
+        </div>
+
+        <div class="benefits">
+          <p>✔ 5% on purchase voucher with OFS Plus</p>
+          <p>✔ 4 payments at 0% interest with Techcombank</p>
+        </div>
+
+        <div class="stock-info">
+          <p class="stock-available">
+            ✔ Stock available at OFs ShowRoom Hanoi, Vietnam
+          </p>
+          <p>🚚 Fast delivery for $8.95 in 6 hours</p>
+          <p>🔄 Up to 90 days return, 120 for OFs Premium members</p>
+        </div>
+      </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="scripts/Loadheaderfooter.js"></script>
   </body>
