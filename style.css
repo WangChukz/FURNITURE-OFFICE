@@ -454,6 +454,7 @@ input::-webkit-search-cancel-button {
   bottom: 70%;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(216, 211, 211, 0.8);
 }
 
 .overlay ul {
