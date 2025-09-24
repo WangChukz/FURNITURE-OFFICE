@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - OFS</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+    body {
+      margin: 0;
+      padding: 60px 0;
+      font-family: sans-serif;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: center;
+      margin: 40px auto;
+    }
+    .hero-box {
+      position: relative;
+      max-width: 1000px;
+      width: 90%;
+      height: 400px; 
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center; 
+      align-items: center; 
+    }
+
+    .hero-box img {
+      width: 100%; 
+      height: 100%; 
+      object-fit: cover;
+      display: block;
+    }
+
+    .hero-box::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); 
+      border-radius: 12px; 
+    }
+    
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+      z-index: 1; 
+    }
+
+    .hero-text h4 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .hero-text h1 {
+      font-size: 42px;
+      font-weight: bold;
+    }
+
+    /* About text */
+    .about-text {
+      width: 90%;
+      max-width: 900px;
+      margin: 40px auto;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    /* Founders */
+    .founders {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .founders-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 30px auto 0;
+    }
+    .founder-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.3s;
+    }
+    .founder-card img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .founder-card:hover img {
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    }
+    .founder-card p {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    /* Facts */
+    .facts {
+      background: #f9f9f9;
+      padding: 40px 20px;
+      margin: 40px auto;
+    }
+    .facts h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .facts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+    .fact-item {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .fact-item:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-box">
+      <img src="assets/images/image.png" alt="About OFS.">
+      <div class="hero-text">
+        <h4>About us</h4>
+        <h1>We are OFS.</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-text">
+    <p>
+      We create unique furniture that improves the new ways in which people live, work and play.
+      For more than 70 years, we've collaborated with the world's best designers to create furniture
+      renowned for its modularity, functionality, and uncompromising quality.
+    </p>
+  </section>
+
+  <section class="founders">
+    <h2>Our Founders</h2>
+    <div class="founders-grid">
+      <a href="https://web.facebook.com/khanh.vi.1044186?locale=vi_VN" target="_blank" class="founder-card">
+        <img src="assets/images/khanhvu.jpg" alt="Founder 1">
+        <p>Jessica Vu</p>
+      </a>
+      <a href="https://web.facebook.com/oanthitranganh.2025?locale=vi_VN" target="_blank" class="founder-card">
+        <img src="assets/images/tranganh.jpg" alt="Founder 2">
+        <p>Chang Eng</p>
+      </a>
+      <a href="https://web.facebook.com/minhkhoa.do.2488?locale=vi_VN" target="_blank" class="founder-card">
+        <img src="assets/images/khoado.jpg" alt="Founder 3">
+        <p>Mikodo</p>
+      </a>
+      <a href="https://web.facebook.com/hoang.phuc.217699?locale=vi_VN" target="_blank" class="founder-card">
+        <img src="assets/images/hoangphuc.jpg" alt="Founder 4">
+        <p>Wangchukz</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="facts">
+    <h2>Our Triumphs</h2>
+    <div class="facts-grid">
+      <div class="fact-item">
+        <h3>30+</h3>
+        <p>Years of Experience</p>
+      </div>
+      <div class="fact-item">
+        <h3>500+</h3>
+        <p>Projects Completed</p>
+      </div>
+      <div class="fact-item">
+        <h3>3000+</h3>
+        <p>Happy Clients</p>
+      </div>
+      <div class="fact-item">
+        <h3>25+</h3>
+        <p>Awards Won</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
