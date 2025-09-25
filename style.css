@@ -509,7 +509,7 @@ input::-webkit-search-cancel-button {
 
   #banner::after {
     height: 400px;
-    width: 109%;
+    width: 100%;
   }
 
   .video-bg {
