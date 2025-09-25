@@ -611,53 +611,6 @@ input::-webkit-search-cancel-button {
     grid-gap: 20px;
   }
 
-  /* Footer */
-  footer {
-    width: 109%;
-    /* margin-left: 25px; */
-  }
-
-  .footer-container {
-    flex-direction: column; /* Các cột xếp dọc */
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-company-box {
-    margin-bottom: 20px;
-  }
-
-  .footer-company-box .logo {
-    text-align: center;
-    justify-content: center;
-  }
-
-  .footer-company-box p {
-    text-align: center !important;
-  }
-
-  .footer-link-box {
-    width: 109%;
-  }
-
-  .footer-link-box strong {
-    font-size: 1rem;
-  }
-
-  .footer-link-box ul li {
-    font-size: 0.85rem;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    text-align: center;
-    gap: 5px;
-  }
-
-  .footer-social {
-    justify-content: center;
-  }
-
   #Product .workdesk-container {
     /* width: 109%; */
     grid-template-columns: 1fr 1fr;
