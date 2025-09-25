@@ -451,10 +451,10 @@ input::-webkit-search-cancel-button {
   top: 10%;
   right: 10%;
   left: 40%;
-  bottom: 70%;
+  bottom: 65%;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(216, 211, 211, 0.8);
+  /* border: 1px solid rgb(216, 211, 211, 0.8); */
 }
 
 .overlay ul {
