@@ -1,4 +1,11 @@
-# Furniture-website
+# OFFICE FURNITURE WEBSITE
+
+-- Brand_name: OFS.
+-- Menu: main 4 pages: Home, Categories, New, About us
+-- Responsive: computer, mobile
+-- Demo
+![alt text](/assets/images/giaodiencomputer.png)
+![alt text](/assets/images/giaodienmobile.png)
 
 STYLE chính:
 --font chữ: Poppins
