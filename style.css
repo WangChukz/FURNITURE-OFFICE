@@ -644,7 +644,7 @@ input::-webkit-search-cancel-button {
 
 @keyframes appear {
   from {
-    opacity: 0;
+    opacity: 0.8;
     transform: translateX(-100px);
   }
   to {
