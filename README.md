@@ -10,11 +10,11 @@
 - Responsive: computer, mobile
 - Demo
 
-      ![alt text](/assets/images/giaodiencomputer.png)
+  ![alt text](/assets/images/giaodiencomputer.png)
 
   ![alt text](/assets/images/giaodienmobile.png)
 
-- Founders<br>
+- Founders
   ![alt text](/assets/images/Founders.png)
 
 - STYLE chính: font chữ: Poppins, color: #FFFFFF, #000000
