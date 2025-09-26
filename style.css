@@ -655,7 +655,8 @@ input::-webkit-search-cancel-button {
 
 #categories,
 #hot-furniture,
-#recent-products {
+#recent-products,
+.founders {
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0 cover 40%;
